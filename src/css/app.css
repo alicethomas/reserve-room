@@ -26,7 +26,19 @@ section::before {
     padding: 10px;
     margin: auto;
     justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    box-shadow: 5px 5px grey;
 }
-.item1 {
+.wrapper-row {
+    display: flex;
+}
+.wrapper-row:first-child {
+    background-color: #0000ff5e;
+}
+
+.item {
+    margin: 10px;
+    padding: 10px;
     flex: 1;
 }
