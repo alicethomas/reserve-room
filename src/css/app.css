@@ -1,0 +1,32 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section::after {
+    padding: 20px;
+    content: '';
+}
+section::before {
+    padding: 20px;
+    content:'';
+}
+
+.main {
+    margin: 30px;
+    padding: 40px;
+    background-color: aliceblue;
+}
+.heading {
+    text-align: center;
+}
+.wrapper {
+    display: flex;
+    width: 600px;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
+}
+.item1 {
+    flex: 1;
+}
