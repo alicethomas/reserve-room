@@ -5,11 +5,26 @@
     <title>
         Reservation table
     </title>
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="../css/app.css">
 </head>
 
 <body>
     <section class="main">
+        <div class="overlay" id="reservationForm">
+            <form class="form-overlay">
+                <h1 style="text-align: center;"> Reservation Form </h1>
+                <div style="text-align: center;">
+                    <label for="Name"><b>Name </b></label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div style="text-align: right;">
+                    <button>
+                        Submit
+                    </button>
+                </div>
+
+            </form>
+        </div>
         <h1 class="heading"> Reservation Table </h1>
         <div class="wrapper">
             <div class="wrapper-row">
@@ -25,18 +40,13 @@
                     Room 1
                 </div>
                 <div class="item" id="room1">
-                    <button onclick="reserveRoom1()" >
+                    <button onclick="openForm()">
                         Reserve
                     </button>
                 </div>
                 <script>
-                    function reserveRoom1() {
-                        return document.getElementById('room1').innerHTML = 'Reserved';
-                    }
-                    function reserveRoom2() {
-                        return (document.getElementById('room2').innerHTML = 'Reserved',
-                        document.getElementById('room2').innerHTML = 'Reserved <button> Edit </button>'
-                        );
+                    function openForm() {
+                        document.getElementById('reservationForm').style.display = "block";
                     }
                 </script>
             </div>
@@ -44,13 +54,14 @@
                 <div class="item">
                     Room 2
                 </div>
-                <div class="item"  id="room2">
-                    <button onclick="reserveRoom2()">
+                <div class="item" id="room2">
+                    <button>
                         Reserve
                     </button>
                 </div>
             </div>
         </div>
+
     </section>
 
 </body>
