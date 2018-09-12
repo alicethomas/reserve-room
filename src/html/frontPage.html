@@ -11,11 +11,11 @@
 <body>
     <section class="main">
         <div class="form-overlay" id="reservationForm">
-            <form class="form">
+            <form class="form" onsubmit="getName()">
                 <h1 style="text-align: center;"> Reservation Form </h1>
                 <div style="text-align: center; padding: 10px;">
                     <label for="Name"><b>Name </b></label>
-                    <input type="text" placeholder="Enter your name">
+                    <input type="text" placeholder="Enter your name" id="name1">
                 </div>
                 <div style="text-align: center;padding: 10px;">
                         <label for="Room1"><b>Room </b></label>
@@ -52,6 +52,9 @@
                         document.getElementById('reservationForm').style.display = "block";
 
                     }
+                    function getName() {
+                        document.getElementById('room1').innerHTML = document.getElementById('name1').value;
+                    }
                 </script>
             </div>
             <div class="wrapper-row">
@@ -67,7 +70,6 @@
         </div>
 
     </section>
-
 </body>
 
 </html>
