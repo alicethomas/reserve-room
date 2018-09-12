@@ -42,3 +42,6 @@ section::before {
     padding: 10px;
     flex: 1;
 }
+.title {
+    font-weight: bold;
+}
