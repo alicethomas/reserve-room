@@ -1,0 +1,23 @@
+{
+  "name": "reserve-room",
+  "version": "1.0.0",
+  "description": "App to reserve a room",
+  "main": "index.js",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alicethomas/reserve-room.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alicethomas/reserve-room/issues"
+  },
+  "homepage": "https://github.com/alicethomas/reserve-room#readme"
+}
