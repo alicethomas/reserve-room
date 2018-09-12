@@ -22,7 +22,7 @@ section::before {
 .heading {
     text-align: center;
 }
-.overlay {
+.form-overlay {
     display: none;
     z-index: 9;
     position: fixed; 
@@ -36,7 +36,7 @@ section::before {
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
 }
-.form-overlay {
+.form {
     position: absolute; 
     background-color: white; 
     border: 1px solid;

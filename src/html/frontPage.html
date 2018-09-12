@@ -10,15 +10,19 @@
 
 <body>
     <section class="main">
-        <div class="overlay" id="reservationForm">
-            <form class="form-overlay">
+        <div class="form-overlay" id="reservationForm">
+            <form class="form">
                 <h1 style="text-align: center;"> Reservation Form </h1>
-                <div style="text-align: center;">
+                <div style="text-align: center; padding: 10px;">
                     <label for="Name"><b>Name </b></label>
                     <input type="text" placeholder="Enter your name">
                 </div>
+                <div style="text-align: center;padding: 10px;">
+                        <label for="Room1"><b>Room </b></label>
+                        <label>Room 1</label>
+                    </div>
                 <div style="text-align: right;">
-                    <button>
+                    <button style="margin:10px; padding:10px;">
                         Submit
                     </button>
                 </div>
@@ -47,6 +51,7 @@
                 <script>
                     function openForm() {
                         document.getElementById('reservationForm').style.display = "block";
+
                     }
                 </script>
             </div>
